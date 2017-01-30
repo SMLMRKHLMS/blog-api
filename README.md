@@ -2,31 +2,32 @@
 
 ### Directions
 
-1. `cd` into the `blog-api` repo.
-2. Run `npm install && npm start`.
-3. Create a user by running the following command to create a new user:
+1. `git clone git@github.com:SMLMRKHLMS/blog-api.git`
+2. `cd` into the `blog-api` repo.
+3. Run `npm install && npm start`.
+4. Create a user by running the following command to create a new user:
 ```
 curl -H "Content-Type: application/json" -X POST -d '{"username": "test123", "password": "letmein123", "firstName": "Test", "lastName": "Tester"}' http://localhost:8080/api/v1/users
 ```
-4. Authenticate said user:
+5. Authenticate said user:
 ```
 curl -H "Content-Type: application/json" -X POST -d '{"username": "test123", "password": "letmein123"}' http://localhost:8080/api/v1/authenticate
 ```
-5. Copy the token
-6. Create a post:
+6. Copy the token
+7. Create a post:
 ```
 curl -H "Content-Type: application/json" -H "x-access-token: COPIED_TOKEN" -X POST -d '{"title": "This is a test post.", "body": "This is test content."}' http://localhost:8080/api/v1/posts
 ```
-7. Get posts:
+8. Get posts:
 ```
 curl -H "Content-Type: application/json" -X GET http://localhost:8080/api/v1/posts
 ```
-8. Copy one of the post's `_id`.
-9. Create a comment:
+9. Copy one of the post's `_id`.
+10. Create a comment:
 ```
 curl -H "Content-Type: application/json" -X POST -d '{"postID": "COPIED ID", "username": "Test username.", "body": "This is test content."}' http://localhost:8080/api/v1/comments
 ```
-10. Get comments:
+11. Get comments:
 ```
 curl -H "Content-Type: application/json" -X GET http://localhost:8080/api/v1/comments
 ```
