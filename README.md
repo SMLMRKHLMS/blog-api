@@ -1,5 +1,7 @@
 ## Blog API
 
+The api is also deployed to: [`https://blog-api-xlmkebspew.now.sh`](https://blog-api-xlmkebspew.now.sh)
+
 ### Directions
 
 1. `git clone git@github.com:SMLMRKHLMS/blog-api.git`
