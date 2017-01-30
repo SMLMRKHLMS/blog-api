@@ -8,29 +8,29 @@ The api is also deployed to: [`https://blog-api-xlmkebspew.now.sh`](https://blog
 * `cd` into the `blog-api` repo.
 * Run `npm install && npm start`.
 * Create a user by running the following command to create a new user:
-```
+```sh
 curl -H "Content-Type: application/json" -X POST -d '{"username": "test123", "password": "letmein123", "firstName": "Test", "lastName": "Tester"}' http://localhost:8080/api/v1/users
 ```
 * Authenticate said user:
-```
+```sh
 curl -H "Content-Type: application/json" -X POST -d '{"username": "test123", "password": "letmein123"}' http://localhost:8080/api/v1/authenticate
 ```
 * Copy the token
 * Create a post:
-```
+```sh
 curl -H "Content-Type: application/json" -H "x-access-token: COPIED_TOKEN" -X POST -d '{"title": "This is a test post.", "body": "This is test content."}' http://localhost:8080/api/v1/posts
 ```
 * Get posts:
-```
+```sh
 curl -H "Content-Type: application/json" -X GET http://localhost:8080/api/v1/posts
 ```
 * Copy one of the post's `_id`.
 * Create a comment:
-```
+```sh
 curl -H "Content-Type: application/json" -X POST -d '{"postID": "COPIED ID", "username": "Test username.", "body": "This is test content."}' http://localhost:8080/api/v1/comments
 ```
 * Get comments:
-```
+```sh
 curl -H "Content-Type: application/json" -X GET http://localhost:8080/api/v1/comments
 ```
 
