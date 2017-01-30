@@ -1,0 +1,28 @@
+{
+  "name": "blog-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SMLMRKHLMS/blog-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SMLMRKHLMS/blog-api/issues"
+  },
+  "homepage": "https://github.com/SMLMRKHLMS/blog-api#readme",
+  "dependencies": {
+    "body-parser": "1.16.0",
+    "express": "4.14.0",
+    "helmet": "3.4.0",
+    "jsonwebtoken": "7.2.1",
+    "mongoose": "4.7.9",
+    "morgan": "1.7.0"
+  }
+}
